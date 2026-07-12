@@ -1,19 +1,21 @@
 import json
-from math_ops import *
-from str_fun import *
 
 def lambda_handler(event, context):
-    
-    
-    print("Event Data -> ", event)
-    print("Trigger Received !!!")
-
-    print("Square of a number = ", square(5))
-    print("Sum of two numbers = ", sum(5,4))
-    print("Double the string = ", double_string("Shashank"))
-    
     # TODO implement
+    print("Event : ", event)
+    print("Context : ", context)
+    a = event['a']
+    b = event['b']
+    total_sum = a + b
+    print("Sum of a & b is = ",total_sum)
     return {
         'statusCode': 200,
-        'body': json.dumps('Bye Bye !!')
+        'body': json.dumps({'total_sum' : total_sum})
     }
+
+# Use this payload for testing lambda from console
+
+# {
+#   "a": 20,
+#   "b": 30
+# }
