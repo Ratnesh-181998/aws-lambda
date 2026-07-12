@@ -15,6 +15,8 @@
 - https://github.com/marketplace/actions/aws-lambda-deploy
 - https://github.com/marketplace/actions/invoke-aws-lambda
 - https://github.com/aws/aws-lambda-builders
+- https://github.com/aws/aws-lambda-roadmap
+- https://github.com/aws/aws-lambda-java-libs
 
 ---
 
