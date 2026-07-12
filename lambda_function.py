@@ -1,15 +1,19 @@
 import json
 
+def cal_square(n):
+    return n**2
+
 def lambda_handler(event, context):
     
     
     print("Event Data -> ", event)
     print("Trigger Received !!!")
 
-    a = 2
-    b = 3
+    num = 5
 
-    print("Sum of a and b = ", a+b)
+    res_square = cal_square(num)
+
+    print("Square Of {} = ".format(num), res_square)
     
     # TODO implement
     return {
